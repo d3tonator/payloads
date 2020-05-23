@@ -1,0 +1,11 @@
+
+
+    nmap -sV --script http-wordpress-enum <target>
+
+    nmap --script http-wordpress-enum --script-args check-latest=true,search-limit=10 <target>
+
+    nmap --script http-wordpress-enum --script-args type="themes" <target>
+
+
+
+

