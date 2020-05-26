@@ -1,0 +1,13 @@
+url=ex.com/pp.png
+
+DNS
+HTTP
+
+exiftool -GPSLatitude="51.522421" -GPSLongitude="-0.84478" (IMG_PATH)
+
+
+
+https://iplogger.org/1Pnr47.jpg
+https://yip.su/1Pnr47.jpg
+
+101.37.26.146
